@@ -59,7 +59,7 @@ namespace TicTacToe_Activity
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(638, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(315, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -115,12 +115,13 @@ namespace TicTacToe_Activity
             // 
             // btn1
             // 
+            this.btn1.Font = new System.Drawing.Font("Segoe UI", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn1.Location = new System.Drawing.Point(22, 49);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(84, 84);
             this.btn1.TabIndex = 1;
-            this.btn1.Text = "button1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -128,7 +129,6 @@ namespace TicTacToe_Activity
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(84, 84);
             this.btn2.TabIndex = 2;
-            this.btn2.Text = "button2";
             this.btn2.UseVisualStyleBackColor = true;
             // 
             // btn3
@@ -137,8 +137,8 @@ namespace TicTacToe_Activity
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(84, 84);
             this.btn3.TabIndex = 3;
-            this.btn3.Text = "button3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -146,7 +146,6 @@ namespace TicTacToe_Activity
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(84, 84);
             this.btn4.TabIndex = 4;
-            this.btn4.Text = "button4";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
@@ -156,7 +155,6 @@ namespace TicTacToe_Activity
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(84, 84);
             this.btn5.TabIndex = 5;
-            this.btn5.Text = "button5";
             this.btn5.UseVisualStyleBackColor = true;
             // 
             // btn6
@@ -165,7 +163,6 @@ namespace TicTacToe_Activity
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(84, 84);
             this.btn6.TabIndex = 6;
-            this.btn6.Text = "button6";
             this.btn6.UseVisualStyleBackColor = true;
             // 
             // btn7
@@ -174,7 +171,6 @@ namespace TicTacToe_Activity
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(84, 84);
             this.btn7.TabIndex = 7;
-            this.btn7.Text = "button7";
             this.btn7.UseVisualStyleBackColor = true;
             // 
             // btn8
@@ -183,7 +179,6 @@ namespace TicTacToe_Activity
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(84, 84);
             this.btn8.TabIndex = 8;
-            this.btn8.Text = "button1";
             this.btn8.UseVisualStyleBackColor = true;
             // 
             // btn9
@@ -192,14 +187,13 @@ namespace TicTacToe_Activity
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(84, 84);
             this.btn9.TabIndex = 9;
-            this.btn9.Text = "button1";
             this.btn9.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 535);
+            this.ClientSize = new System.Drawing.Size(315, 387);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
