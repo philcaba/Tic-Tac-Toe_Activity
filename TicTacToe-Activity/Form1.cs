@@ -52,5 +52,9 @@ namespace TicTacToe_Activity
             b.Enabled = false;
             
         }
+
+        private void winnerCombination();
+
     }
+
 }
