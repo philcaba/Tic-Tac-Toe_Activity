@@ -49,6 +49,8 @@ namespace TicTacToe_Activity
                 b.Text = "O";
 
             turn = !turn;
+            b.Enabled = false;
+            
         }
     }
 }
