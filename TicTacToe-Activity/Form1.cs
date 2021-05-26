@@ -12,6 +12,8 @@ namespace TicTacToe_Activity
 {
     public partial class Form1 : Form
     {
+        bool turn = true; // true = player 1 turn; false = player 2 turn
+        int turn_count = 0;                  
         public Form1()
         {
             InitializeComponent();
@@ -29,12 +31,7 @@ namespace TicTacToe_Activity
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            
-
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
+            Application.Restart();
 
         }
 
@@ -43,14 +40,15 @@ namespace TicTacToe_Activity
 
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void button_click(object sender, EventArgs e)
         {
+            Button b = (Button)sender;
+            if (turn)
+                b.Text = "X";
+            else
+                b.Text = "O";
 
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-
+            turn = !turn;
         }
     }
 }
