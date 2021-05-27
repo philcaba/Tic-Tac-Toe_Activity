@@ -51,12 +51,32 @@ namespace TicTacToe_Activity
             turn = !turn;
             b.Enabled = false;
 
+            checking();
+
         }
         private void checking()
         {
             bool winner = false;
 
-            if ((btn1.Text == btn2.Text)&&(btn2.Text != btn3.Text));
+            if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text));
+            winner = true;
+            if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text));
+            winner = true;
+            if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text)) ;
+            winner = true;
+
+            if (winner)
+            {
+                String who_wins = "";
+                if (turn)
+                    who_wins = "O";
+                else
+                    who_wins = "X";
+
+                MessageBox.Show("You win");
+            }
+
+
 
 
 
