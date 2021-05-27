@@ -13,7 +13,7 @@ namespace TicTacToe_Activity
     public partial class Form1 : Form
     {
         bool turn = true; // true = player 1 turn; false = player 2 turn
-        int turn_count = 0;                  
+        int turn_count = 0;
         public Form1()
         {
             InitializeComponent();
@@ -50,11 +50,19 @@ namespace TicTacToe_Activity
 
             turn = !turn;
             b.Enabled = false;
-            
-        }
 
-        private void winnerCombination();
+        }
+        private void checking()
+        {
+            bool winner = false;
+
+            if ((btn1.Text == btn2.Text)&&(btn2.Text != btn3.Text));
+
+
+
+
+        }//endChecking
+
 
     }
-
 }
