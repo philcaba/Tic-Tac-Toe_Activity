@@ -58,25 +58,50 @@ namespace TicTacToe_Activity
         {
             bool winner = false;
 
-            if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text) && (!btn1.Enabled)) 
-            winner = true;
-            if ((btn4.Text == btn5.Text) && (btn5.Text == btn6.Text) && (!btn4.Enabled)) 
-            winner = true;
-            if ((btn7.Text == btn8.Text) && (btn8.Text == btn9.Text) && (!btn7.Enabled)) 
-            winner = true;
+            if ((btn1.Text == btn2.Text) && (btn2.Text == btn3.Text) && (!btn1.Enabled))
+                winner = true;
+            if ((btn4.Text == btn5.Text) && (btn5.Text == btn6.Text) && (!btn4.Enabled))
+                winner = true;
+            if ((btn7.Text == btn8.Text) && (btn8.Text == btn9.Text) && (!btn7.Enabled))
+                winner = true;
 
 
-            if (winner)
+            if (!winner)
             {
-                String who_wins = "";
-                if (turn)
-                    who_wins = "O";
-                else
-                    who_wins = "X";
-
-
-                MessageBox.Show(who_wins + " wins. ");
+                return;
             }
+            endGame();
+            String who_wins = "";
+            if (turn)
+                who_wins = "O";
+            else
+                who_wins = "X";
+
+
+            MessageBox.Show(who_wins + " wins. ");
+
+        }
+
+         private void endGame()
+        {
+            try
+            {
+
+                foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
+                    b.Enabled = false;
+                }
+            }
+            catch { }
+
+        }
+
+            
+
+
+
+           
         
             
 
@@ -89,4 +114,4 @@ namespace TicTacToe_Activity
 
 
     }
-}
+
