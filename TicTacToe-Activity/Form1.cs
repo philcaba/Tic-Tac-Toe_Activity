@@ -50,6 +50,7 @@ namespace TicTacToe_Activity
 
             turn = !turn;
             b.Enabled = false;
+           
 
             checking();
 
@@ -70,17 +71,23 @@ namespace TicTacToe_Activity
             {
                 return;
             }
-            endGame();
-            String who_wins = "";
-            if (turn)
-                who_wins = "O";
-            else
-                who_wins = "X";
+
+                endGame();
+                String who_wins = "";
+                if (turn)
+                    who_wins = "O";
+                else
+                    who_wins = "X";
 
 
-            MessageBox.Show(who_wins + " wins. ");
-
+                MessageBox.Show(who_wins + " wins. ");
+            
         }
+            
+               
+
+               
+        
 
          private void endGame()
         {
