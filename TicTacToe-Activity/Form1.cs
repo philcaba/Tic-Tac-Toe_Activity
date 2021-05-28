@@ -66,6 +66,14 @@ namespace TicTacToe_Activity
             if ((btn7.Text == btn8.Text) && (btn8.Text == btn9.Text) && (!btn7.Enabled))
                 winner = true;
 
+            if ((btn1.Text == btn4.Text) && (btn4.Text == btn7.Text) && (!btn1.Enabled))
+                winner = true;
+            if ((btn2.Text == btn5.Text) && (btn5.Text == btn8.Text) && (!btn2.Enabled))
+                winner = true;
+            if ((btn3.Text == btn6.Text) && (btn6.Text == btn9.Text) && (!btn3.Enabled))
+                winner = true;
+
+
 
             if (!winner)
             {
