@@ -73,6 +73,13 @@ namespace TicTacToe_Activity
             if ((btn3.Text == btn6.Text) && (btn6.Text == btn9.Text) && (!btn3.Enabled))
                 winner = true;
 
+            if ((btn1.Text == btn5.Text) && (btn5.Text == btn9.Text) && (!btn1.Enabled))
+                winner = true;
+            if ((btn3.Text == btn5.Text) && (btn5.Text == btn7.Text) && (!btn3.Enabled))
+                winner = true;
+
+
+
 
 
             if (!winner)
@@ -88,7 +95,7 @@ namespace TicTacToe_Activity
                     who_wins = "X";
 
 
-                MessageBox.Show(who_wins + " wins. ");
+                MessageBox.Show(who_wins + " wins. ", "Result");
             
         }
             
