@@ -75,7 +75,7 @@ namespace TicTacToe_Activity
                     who_wins = "X";
 
 
-                MessageBox.Show("You win");
+                MessageBox.Show(who_wins + " wins. ");
             }
         
             
